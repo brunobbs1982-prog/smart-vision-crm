@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  --sf-navy: #032D60;
+  --sf-dark: #001639;
+  --sf-blue: #0176D3;
+  --sf-blue-hover: #014486;
+  --sf-light-blue: #EBF5FF;
+  --sf-bg: #F3F6F9;
+  --sf-emerald: #10B981;
+  --sf-emerald-hover: #059669;
+  --background: var(--sf-bg);
+  --foreground: #1e293b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-sf-navy: var(--sf-navy);
+  --color-sf-dark: var(--sf-dark);
+  --color-sf-blue: var(--sf-blue);
+  --color-sf-blue-hover: var(--sf-blue-hover);
+  --color-sf-light-blue: var(--sf-light-blue);
+  --color-sf-bg: var(--sf-bg);
+  --color-sf-emerald: var(--sf-emerald);
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-heading: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-metric: "JetBrains Mono", ui-monospace, monospace;
+}
+
+body {
+  background: var(--sf-bg);
+  color: var(--foreground);
+  font-family: Inter, system-ui, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+.font-heading {
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+.font-metric {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  letter-spacing: -0.03em;
+}
+
+.btn-primary {
+  background-color: var(--sf-blue);
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.15s;
+}
+.btn-primary:hover { background-color: var(--sf-blue-hover); }
+
+.btn-emerald {
+  background-color: var(--sf-emerald);
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.15s;
+}
+.btn-emerald:hover { background-color: var(--sf-emerald-hover); }
+
+.input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  font-size: 0.875rem;
+  outline: none;
+  background: #fff;
+}
+.input:focus {
+  border-color: #0176d3;
+  box-shadow: 0 0 0 2px rgba(1, 118, 211, 0.15);
+}
