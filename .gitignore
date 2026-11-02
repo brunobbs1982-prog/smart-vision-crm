@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+dist
+.env
+.env.local
+*.log
+.DS_Store
+backend/.venv
+backend/__pycache__
+**/__pycache__
+.venv

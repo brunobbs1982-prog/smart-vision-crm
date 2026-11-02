@@ -1,0 +1,28 @@
+{
+  "name": "smart-vision-crm",
+  "version": "4.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "export": "next build",
+    "pages:build": "next build"
+  },
+  "dependencies": {
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zustand": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "^15.1.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
